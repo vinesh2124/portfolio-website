@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - John Carter Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+<nav>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">JC</a>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#blogs">Blogs</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="public/resume.pdf" class="btn btn-download-resume" download>
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html#projects" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+            
+            <div id="projectDetailsContent">
+                <!-- Project details will be dynamically loaded here -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading project details...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 John Carter. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/project-details.js"></script>
+</body>
+</html>

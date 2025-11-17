@@ -1,0 +1,236 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 50px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .education-item {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .education-item::before {
+        display: none;
+    }
+
+    .education-timeline::before {
+        display: none;
+    }
+    
+    .profile-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profile-initials {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--nav-bg);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        transform: translateY(-150%);
+        transition: var(--transition);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .profile-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-initials {
+        font-size: 5rem;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .skills-container,
+    .projects-container,
+    .blogs-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .profile-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-initials {
+        font-size: 4rem;
+    }
+    
+    .social-links {
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Enhanced Mobile Header with Resume Button */
+@media (max-width: 768px) {
+    .nav-container {
+        position: relative;
+    }
+    
+    .nav-actions {
+        position: static;
+        margin: 0;
+    }
+    
+    .nav-links.active .nav-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .btn-download-resume {
+        margin: 5px 0;
+    }
+    
+    /* Ensure proper spacing in mobile menu */
+    .nav-links li:not(.nav-actions) {
+        padding: 8px 0;
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .btn-download-resume span {
+        display: none; /* Hide text on very small screens */
+    }
+    
+    .btn-download-resume {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .btn-download-resume i {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .btn-download-resume {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .nav-actions {
+        gap: 12px;
+        margin-left: 1.5rem;
+    }
+}
